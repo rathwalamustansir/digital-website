@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weblance Studio — Digital Agency</title>
+<link rel="shortcut icon" href="./weblance.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">Weblance<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span class="toggle-icon" id="theme-icon-sun">☀️</span>
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      <span class="toggle-icon" id="theme-icon-moon">🌙</span>
+    </button>
+    <a href="#cta" class="nav-cta">Get Started</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#why" onclick="closeMenu()">About</a>
+  <a href="#process" onclick="closeMenu()">Process</a>
+  <a href="#cta" onclick="closeMenu()">Contact</a>
+  <a href="#cta" class="btn-primary" onclick="closeMenu()">Get Started</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Currently accepting new projects</div>
+    <h1>
+      We Build<br>
+      <span class="outline-word">Digital</span>
+      <span class="accent-word"> Experiences</span><br>
+      That Convert
+    </h1>
+    <p class="hero-desc">Weblance Studio is a full-service digital agency crafting websites, brands, and SEO strategies that drive real business growth.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#cta" class="btn-ghost">Let's Talk →</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Projects delivered</div>
+      </div>
+      <div>
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">Client satisfaction</div>
+      </div>
+      <div>
+        <div class="stat-num">3<span>yr</span></div>
+        <div class="stat-label">Industry experience</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-float">
+    <div class="float-card">
+      <div class="float-dot"></div>
+      <div class="float-title">Website Launched 🚀</div>
+      <div class="float-sub">E-commerce store — 2.1s load time</div>
+      <div class="float-bar"><div class="float-bar-fill" style="width:85%"></div></div>
+    </div>
+    <div class="float-card">
+      <div class="float-dot"></div>
+      <div class="float-title">SEO Rankings ↑</div>
+      <div class="float-sub">Page 1 in 60 days</div>
+      <div class="float-bar"><div class="float-bar-fill" style="width:72%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item">Graphic Design</span>
+    <span class="marquee-item">SEO Optimization</span>
+    <span class="marquee-item">Website Redesign</span>
+    <span class="marquee-item">Brand Identity</span>
+    <span class="marquee-item">UI / UX Design</span>
+    <span class="marquee-item">Performance Audits</span>
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item">Graphic Design</span>
+    <span class="marquee-item">SEO Optimization</span>
+    <span class="marquee-item">Website Redesign</span>
+    <span class="marquee-item">Brand Identity</span>
+    <span class="marquee-item">UI / UX Design</span>
+    <span class="marquee-item">Performance Audits</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <div class="section-label">What we do</div>
+      <h2>Services built<br>for growth</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:0">Every service is tailored to your business goals — from pixel-perfect designs to first-page Google rankings.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card fade-in">
+      <span class="service-num">01</span>
+      <div class="service-icon-wrap">🌐</div>
+      <div class="service-title">Website Development</div>
+      <p class="service-desc">We engineer fast, scalable, and stunning websites from scratch. Whether it's a landing page or a full-stack web app, we build it right — performant, accessible, and mobile-first.</p>
+      <div class="service-tags">
+        <span class="tag">React / Next.js</span>
+        <span class="tag">WordPress</span>
+        <span class="tag">E-commerce</span>
+        <span class="tag">Custom CMS</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in delay-1">
+      <span class="service-num">02</span>
+      <div class="service-icon-wrap">🎨</div>
+      <div class="service-title">Graphic Designing</div>
+      <p class="service-desc">From brand identities to social media assets, our designers craft visuals that communicate your story and captivate your audience with bold, intentional creativity.</p>
+      <div class="service-tags">
+        <span class="tag">Brand Identity</span>
+        <span class="tag">Logo Design</span>
+        <span class="tag">Print & Digital</span>
+        <span class="tag">Social Assets</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in delay-2">
+      <span class="service-num">03</span>
+      <div class="service-icon-wrap">✏️</div>
+      <div class="service-title">Website Redesigning</div>
+      <p class="service-desc">Is your site outdated or underperforming? We transform tired websites into conversion machines — refreshing the UI, improving UX, and boosting load speed.</p>
+      <div class="service-tags">
+        <span class="tag">UI Refresh</span>
+        <span class="tag">UX Audit</span>
+        <span class="tag">Speed Boost</span>
+        <span class="tag">Conversion CRO</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in delay-3">
+      <span class="service-num">04</span>
+      <div class="service-icon-wrap">📈</div>
+      <div class="service-title">SEO Optimization</div>
+      <p class="service-desc">We get you found. Through technical audits, content strategy, and link building, we push your site to the top of search results — and keep it there.</p>
+      <div class="service-tags">
+        <span class="tag">Technical SEO</span>
+        <span class="tag">On-Page SEO</span>
+        <span class="tag">Link Building</span>
+        <span class="tag">Analytics</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-grid">
+    <div class="why-left">
+      <div class="section-label">Why Weblance</div>
+      <h2>The agency that delivers, not just promises</h2>
+      <p class="section-desc" style="margin-bottom:2rem">We combine strategic thinking with sharp execution. No fluff, no delays — just results that move the needle.</p>
+      <ul class="why-features">
+        <li class="why-feature fade-in">
+          <div class="feature-icon">⚡</div>
+          <div>
+            <div class="feature-title">Fast Turnaround</div>
+            <div class="feature-desc">Most projects launch within 2–4 weeks. We respect your timeline as much as we respect your brand.</div>
+          </div>
+        </li>
+        <li class="why-feature fade-in delay-1">
+          <div class="feature-icon">💬</div>
+          <div>
+            <div class="feature-title">Transparent Communication</div>
+            <div class="feature-desc">Weekly updates, clear milestones, and a dedicated project manager. You're never left in the dark.</div>
+          </div>
+        </li>
+        <li class="why-feature fade-in delay-2">
+          <div class="feature-icon">🎯</div>
+          <div>
+            <div class="feature-title">Results-Driven Approach</div>
+            <div class="feature-desc">We measure success by your growth — traffic, conversions, and revenue — not just pretty designs.</div>
+          </div>
+        </li>
+        <li class="why-feature fade-in delay-3">
+          <div class="feature-icon">🔒</div>
+          <div>
+            <div class="feature-title">Post-Launch Support</div>
+            <div class="feature-desc">Our relationship doesn't end at launch. We offer ongoing support, maintenance, and growth consulting.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="why-right fade-in">
+      <div class="metric-card">
+        <div class="metric-value">10<span>+</span></div>
+        <div class="metric-label">Projects successfully delivered across industries</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">3×</div>
+        <div class="metric-label">Average traffic increase within 6 months of SEO</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">98<span>%</span></div>
+        <div class="metric-label">Client retention and satisfaction rate</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">14<span>d</span></div>
+        <div class="metric-label">Average time to first design delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-header">
+    <div class="section-label">How we work</div>
+    <h2>Our process, simplified</h2>
+    <p class="section-desc">From your first message to your launch day, here's exactly how we work together.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step fade-in">
+      <div class="step-num">01</div>
+      <div class="step-title">Discovery Call</div>
+      <p class="step-desc">We listen first. A free 30-minute call to understand your goals, audience, and the problems we need to solve together.</p>
+    </div>
+    <div class="process-step fade-in delay-1">
+      <div class="step-num">02</div>
+      <div class="step-title">Strategy & Proposal</div>
+      <p class="step-desc">We craft a detailed roadmap with timelines, deliverables, and pricing. No surprises — everything is agreed upfront.</p>
+    </div>
+    <div class="process-step fade-in delay-2">
+      <div class="step-num">03</div>
+      <div class="step-title">Design & Build</div>
+      <p class="step-desc">Our designers and developers get to work. You get regular previews and can give feedback at every stage.</p>
+    </div>
+    <div class="process-step fade-in delay-3">
+      <div class="step-num">04</div>
+      <div class="step-title">Launch & Grow</div>
+      <p class="step-desc">We launch, monitor performance, and optimize. We're your long-term partner in digital growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="cta-glow"></div>
+    <div class="section-label" style="justify-content:center; margin-bottom:1rem">Ready to grow?</div>
+    <h2>Let's build something<br><span style="color:var(--accent)">remarkable</span> together</h2>
+    <p>Tell us about your project and we'll get back to you within 24 hours with ideas, not just a quote.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/+917435991767" class="btn-primary">Start a Project</a>
+      <a href="tel:+917435991767" class="btn-ghost">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">Weblance<span>.</span></a>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 Weblance Studio. All rights reserved.</p>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
